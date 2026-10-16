@@ -44,18 +44,3 @@ Keep record IDs unique. The document pop-up uses `textContent` for record fields
 - A static GitHub Pages site does not provide private member accounts or secure server-side access controls.
 - Mark the project as fan-made and in-universe; do not imply official affiliation with the SCP Foundation Wiki or Roblox.
 
-
-## Gold accent update
-The red accent theme has been changed to Military Gold (`#C8A24D`) with a lighter gold highlight (`#E0BD61`).
-
-## About editing pages like Google Docs
-This starter is a static website. It cannot securely verify that bengale384@gmail.com is the owner, nor save edits for all visitors, without a real authentication/database service. Browser-only editing or local storage would only save on one device and is not owner-secure.
-
-For true owner-only in-site editing, the next version should connect to a backend such as Supabase:
-1. Create a Supabase project and enable email authentication.
-2. Add `bengale384@gmail.com` as the only authorized editor in database access policies (not just a client-side email check).
-3. Store each archive document in a database.
-4. Add a rich-text editor toolbar and Save/Publish controls to the site.
-5. Keep public visitors read-only; only the authenticated owner can write.
-
-Do not put a service-role secret or password in website JavaScript. GitHub Pages can host the front end, but owner-only editing requires the external authentication/database setup.
